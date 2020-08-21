@@ -1,5 +1,6 @@
 package cl.desafiolatam.tdddesafiociclobike
 
+import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
@@ -8,7 +9,8 @@ class CyclobikeViewholder(itemView: View) : RecyclerView.ViewHolder(itemView)
 
 class CycloAdapter : RecyclerView.Adapter<CyclobikeViewholder>() {
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): CyclobikeViewholder {
-        TODO("Not yet implemented")
+        val view = LayoutInflater.from(parent.context).inflate(R.layout.list_item, parent, false)
+        return CyclobikeViewholder(view)
     }
 
     override fun onBindViewHolder(holder: CyclobikeViewholder, position: Int) {
