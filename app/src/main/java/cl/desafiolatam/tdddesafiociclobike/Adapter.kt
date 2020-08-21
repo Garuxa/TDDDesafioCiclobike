@@ -25,7 +25,7 @@ class CycloAdapter(val lista: List<Ciclovia>) : RecyclerView.Adapter<CyclobikeVi
 
     override fun onBindViewHolder(holder: CyclobikeViewholder, position: Int) {
         val ciclovia = lista[position]
-        Log.d("CycloAdaoter", ciclovia.toString())
+        Log.d("CycloAdapter", ciclovia.toString())
 
         holder.tvCiclovia.text = ciclovia.nombre
         holder.tvComuna.text = ciclovia.comuna
