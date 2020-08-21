@@ -7,7 +7,7 @@ import androidx.recyclerview.widget.RecyclerView
 
 class CyclobikeViewholder(itemView: View) : RecyclerView.ViewHolder(itemView)
 
-class CycloAdapter(var lista: List<Ciclovia>) : RecyclerView.Adapter<CyclobikeViewholder>() {
+class CycloAdapter(val lista: List<Ciclovia>) : RecyclerView.Adapter<CyclobikeViewholder>() {
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): CyclobikeViewholder {
         val view = LayoutInflater.from(parent.context).inflate(R.layout.list_item, parent, false)
         return CyclobikeViewholder(view)
