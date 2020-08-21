@@ -31,7 +31,7 @@ class SetupCiclovias {
         "Providencia"
     )
 
-    fun init(): ArrayList<Ciclovia> {
+    fun init(): MutableList<Ciclovia> {
         val lista: MutableList<Ciclovia> = ArrayList()
         for (i in 0..9) {
             val ciclovia = Ciclovia(nombres[i], comunas[i])
