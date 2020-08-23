@@ -25,11 +25,11 @@ class MainActivity : AppCompatActivity() {
         )
 
         btn_filter.setOnClickListener {
-            TODO("IMPLEMENTAR FUNCIONALIDAD")
+            cyclo_recycler.adapter = CycloAdapter(SetupCiclovias().condes())
         }
 
         btn_not_filter.setOnClickListener {
-            TODO("IMPLEMENTAR FUNCIONALIDAD")
+            cyclo_recycler.adapter = CycloAdapter(SetupCiclovias().init())
         }
     }
 }

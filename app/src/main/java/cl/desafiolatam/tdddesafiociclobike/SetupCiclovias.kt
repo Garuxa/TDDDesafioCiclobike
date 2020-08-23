@@ -39,4 +39,15 @@ class SetupCiclovias {
         }
         return lista
     }
+
+    fun condes(): MutableList<Ciclovia> {
+        val lista: MutableList<Ciclovia> = ArrayList()
+
+        for (i in 0..9) {
+            when (init()[i].comuna) {
+                "Las Condes" -> lista.add(init()[i])
+            }
+        }
+        return lista
+    }
 }
