@@ -14,5 +14,13 @@ class MainActivity : AppCompatActivity() {
         val myAdapter = CycloAdapter(setupCiclovias)
 
         cyclo_recycler.adapter = myAdapter
+
+        btn_filter.setOnClickListener {
+            TODO("IMPLEMENTAR FUNCIONALIDAD")
+        }
+
+        btn_not_filter.setOnClickListener {
+            TODO("IMPLEMENTAR FUNCIONALIDAD")
+        }
     }
 }
