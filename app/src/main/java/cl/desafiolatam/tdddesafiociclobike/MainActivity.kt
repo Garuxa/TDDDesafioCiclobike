@@ -2,6 +2,8 @@ package cl.desafiolatam.tdddesafiociclobike
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
+import androidx.recyclerview.widget.DividerItemDecoration
+import androidx.recyclerview.widget.LinearLayoutManager
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
@@ -14,6 +16,13 @@ class MainActivity : AppCompatActivity() {
         val myAdapter = CycloAdapter(setupCiclovias)
 
         cyclo_recycler.adapter = myAdapter
+
+        cyclo_recycler.addItemDecoration(
+            DividerItemDecoration(
+                this@MainActivity,
+                LinearLayoutManager.VERTICAL
+            )
+        )
 
         btn_filter.setOnClickListener {
             TODO("IMPLEMENTAR FUNCIONALIDAD")
